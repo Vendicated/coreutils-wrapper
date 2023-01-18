@@ -25,3 +25,30 @@ Clone and install this program with `cargo install --path .`
 
 Now you can install the shims to the current directory by running `coreutils-wrapper --link`
 (run this in ~/.local/bin for example, any directory in PATH will work)
+
+```
+$ coreutils-wrapper --help
+  ================================================
+                  coreutil-wrapper
+  ================================================
+
+  This is a wrapper for the rust coreutils command
+  that allows you to run commands directly: `sort`
+  instead of `coreutils sort`. Arguments and stdin
+  are of course forwarded to the desired command!!
+
+  You should usually not call me directly, instead
+  run me with the --link flag to create a shim for
+  each command in the current working directory :3
+  Make sure the directory is in your PATH, or else
+  you won't actually be able to call the commands!
+
+  Usage:
+     --help: Show this help message and exit (^_^)
+     --link: Create a shim for each command in the
+             current directory. This will override
+             any existing files with the same name
+     --drop: Delete shims in the current directory
+     --pwsh: Help with removing powershell aliases
+
+```

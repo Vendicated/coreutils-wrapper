@@ -26,6 +26,12 @@ Clone and install this program with `cargo install --path .`
 Now you can install the shims to the current directory by running `coreutils-wrapper --link`
 (run this in ~/.local/bin for example, any directory in PATH will work)
 
+<details>
+<summary>And the result</summary>
+
+![image](https://user-images.githubusercontent.com/45497981/213292697-74cb174e-03bc-4719-b309-49f4cad7626e.png)
+</details>
+
 ```
 $ coreutils-wrapper --help
   ================================================
